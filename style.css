@@ -1,4 +1,77 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+      background-color:black;
+      color: white;
+    }
+.header{
+  color:grey;
+  font-size: 80px;
+  font-family: Verdana, sans-serif;
 
+ }
+.maindiv{
+  background-color: white;
+  color: black;
+  width: 90%;
+  height: 610px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  font-family: Arial, sans-serif;
+  line-height: 0.8 ;
 
+  text-align: center;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  font-size: 35px;
+
+}
+td{
+
+  text-align: left;
+  height: 65px;
+  font-weight: bold;
+}
+.tdcenter{
+
+  text-align: left;
+}
+.textbox{
+  width: 390px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.slider{
+  width: 306px;
+  height: 30px;
+}
+.slidernum{
+  font-size: 22px;
+  font-weight: bold;
+}
+select{
+  height: 35px;
+  width: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+button{
+  width: 230px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.result_s{
+  font-size: 23px;
+  line-height: 1.1 ;
+
+}
+footer{
+  text-align: left;
+  margin-left: 30px;
+  font-weight: bold;
+  position:fixed;
+  bottom:80px;
+}

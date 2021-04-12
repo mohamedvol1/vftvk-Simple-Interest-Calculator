@@ -1,16 +1,58 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title>
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+      <div class="maindiv">
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <h1 class="header">Simple Interest Calculator</h1>
+          <!-- inputs -->
+          <table>
+            <!-- row0 -->
+            <tr>
+              <td>Amount</td>
+              <td class="tdcenter"><input class="textbox" type="number"  id="principal"></td>
+            </tr>
+            <!-- row1 -->
+            <tr>
+              <td>Interest Rate</td>
+              <td class="tdcenter">
+                  <input class="slider" type="range" min="1" max="20" step="0.25" value="10.25" id="rate" oninput="myFunction(this.value)">
+                  <output class="slidernum" id="demo">10.50%</output>
+              </td>
+            </tr>
+            <!-- row2 -->
+            <tr>
+              <td>No. of Year</td>
+              <td class="tdcenter">
+                <select id="years">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </td>
+            </tr>
+            <!-- row3 -->
+            <tr>
+              <td>
+                <button onclick="compute()">Compute Interest</button>
+                <p class="result_s"><span id="result"></span><br/></p>
+              </td>
+            </tr>
+          </table>
+        <footer>
+	         <p>Every One Cane Get Rich. © 2021</p>
+        </footer>
+      </div>
     </body>
 </html>
